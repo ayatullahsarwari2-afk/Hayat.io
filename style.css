@@ -1,0 +1,314 @@
+
+   
+
+@font-face{
+font: url(AbrilFatface-Regular.ttf);
+font-family: abril;
+}
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+/* Home Section */
+@keyframes nav{
+    from{
+    top: -200px;
+    }
+    to{
+        top: 0px;
+    }
+}
+
+.home > .navbar{
+    top: 0%;
+    width: 100%;
+    background: linear-gradient(to left, rgb(182, 43, 22),rgb(255, 34, 0));
+    height: 7%;
+    text-align: center;
+    align-content: center;
+    animation: 2s ease-in-out nav;
+    position: absolute;
+}
+.navbar > a{
+    margin: 10px;
+    font-size: large;
+    font-weight: bolder;
+    text-decoration: none;    
+    float: left;
+  color: rgb(54, 20, 0);
+
+}
+.navbar > #me{
+    right: 4px;
+    position: absolute;
+    color: white;
+    top: 10px;
+}
+.home > #mainpic{
+    width: 100%;
+    height: 100%;
+}
+.home > #name{
+    left: 14%;
+    position: absolute;
+    top: 34%;
+    color: white;
+    font-size: 50px;
+      color: rgb(255, 34, 0);
+          font-family: abril;
+}
+.home > #lastname{
+     left: 14%;
+    position: absolute;
+    top: 40%;
+    color: white;
+    font-size: 80px;
+    font-weight: bolder;
+    font-family: abril;
+      color: rgb(255, 34, 0);
+}
+.home > h3{
+     left: 19%;
+    position: absolute;
+    top: 52%;
+    color: white;
+    font-size: 20px;
+    font-weight: bolder;
+    font-family: abril;
+      color: rgb(255, 34, 0);
+}
+.home > #two{
+    height: 40px;
+    width: 120px;
+    border: 2px solid rgb(255, 34, 0);
+    position: absolute;
+    bottom: 37%;
+    font-size: large;
+    font-weight: bold;
+    padding: 5px;
+    left: 25%;
+    border-radius: 10px;
+    color:  rgb(255, 34, 0);
+    background-color: transparent;
+}
+.home > #one{
+    height: 40px;
+    width: 120px;
+    border: 2px solid rgb(255, 34, 0);
+    position: absolute;
+    bottom: 37%;
+    font-size: large;
+    font-weight: bold;
+    padding: 5px;
+    left: 15%;
+    border-radius: 10px;
+    color:  rgb(255, 34, 0);
+    background-color: transparent;
+}
+#one:hover,#two:hover{
+    background-color:  rgb(255, 34, 0);
+    color: rgb(37, 37, 143);
+}
+/* Home section resposive */
+@keyframes smallnav{
+    from{
+        top:-100px;
+    }
+    to{
+        top: 10px;
+    }
+}
+.service{
+    height: 700px;
+    width: 100%;
+    position: absolute;
+    bottom: 0px;
+    background: linear-gradient(to left, rgb(206, 185, 0),rgb(230, 247, 0)  );
+    top: 700px;
+}
+.service > .one,.two,.three,.four,.five,.six{
+    background-color: rgb(255, 34, 0);
+    height: 35%;
+    width: 32%;
+    border: rgb(53, 0, 0) solid 2px;
+    position: absolute;
+    top: 100px;
+}
+.one>img,.two>img,.three>img,.four>img,.five>img,.six>img{
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    left: 50%;
+    top: -20;
+    transform: translateX(-50%);
+}
+.one>h1,.two>h1,.three>h1,.four>h1,.five>h1,.six>h1{
+    position: absolute;
+    left: 50%;
+    color: white;
+    top: 70px;
+    transform: translateX(-50%);
+}
+.one>p,.two>p,.three>p,.four>p,.five>p,.six>p{
+    position: absolute;
+   left: 10px;
+   right: 10px;
+    color: white;
+    bottom: 10px;
+    word-break: break-all;
+    font-size: 14;
+    font-weight: bold;
+    text-align: center;
+ 
+}
+
+
+.one{
+    left: 10px;
+}
+.two{
+    left: 457px;
+}
+.three{
+    right: 10px;
+}
+.four{
+    left: 10px;
+    top: 360px;
+}
+.five{
+    left: 457px;
+        top: 360px;
+}
+.six{
+    right: 10px;
+        top: 360px;
+}
+
+@media screen and (max-width: 450px)
+{
+   .service{
+    background: linear-gradient(to top,orange,orangered);
+    position: absolute;
+    top: 660px;
+    height: 2000px;
+   }
+   .service > .one,.two,.three,.four,.five,.six{
+    background-color: rgb(255, 34, 0);
+    width: 94%;
+    border: rgb(53, 0, 0) solid 2px;
+    left: 10px;
+    right: 10px;
+ height: 300px;
+    position: absolute;
+}
+.one{
+    top: 210px;
+    
+}
+.two{
+    top: 410px;
+}
+.three{
+    top: 720px;
+}
+.four{
+    top: 1030px;
+}
+.five{
+    top: 1340px;
+}
+.six{
+    top: 1650px;
+}
+
+    .home > .smallnavbar{
+    background: linear-gradient(to left, rgb(182, 43, 22),rgb(255, 34, 0));
+    text-align: center;
+    animation: 2s ease-in-out smallnav;
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    border-radius: 10px;
+    top: 10px;
+    left: 10px;
+}
+.smallnavbar > a{
+    display: none;
+}
+.navbar{
+    display: none;
+}
+.navbar > a:hover{
+    transform: scale(1.1);
+}
+.home > #mainpic{
+    width: 100%;
+    height: 100%;
+}
+.home > #name{
+    left: 50%;
+    transform:translateX(-50%);
+    position: absolute;
+    top: 36%;
+    color: white;
+    width: 10%;
+    height: 6%;
+    font-size: 35px;
+      color: rgb(255, 34, 0);
+          font-family: abril;
+}
+.home > #lastname{
+     left: 50%;
+    transform:translateX(-50%);
+    position: absolute;
+    top: 40%;
+    color: white;
+    font-size: 50px;
+    font-weight: bolder;
+    font-family: abril;
+      color: rgb(255, 34, 0);
+}
+.home > h3{
+     left: 50%;
+    transform:translateX(-50%);
+    position: absolute;
+    top: 48%;
+    color: white;
+    font-size: 20px;
+    font-weight: bolder;
+    font-family: abril;
+      color: rgb(255, 34, 0);
+}
+.home > #two{
+    height: 30px;
+    width: 105px;
+    border: 2px solid rgb(255, 34, 0);
+    position: absolute;
+    top: 53%;
+    padding: 5px;
+    left: 50%;
+    border-radius: 10px;
+    font-size: 15px;
+    color:  rgb(255, 34, 0);
+    background-color: transparent;
+}
+.home > #one{
+    height: 30px;
+    width: 100px;
+    border: 2px solid rgb(255, 34, 0);
+    position: absolute;
+    top: 53%;
+    padding: 5px;
+    left: 25%;
+    border-radius: 10px;
+    font-size: 15px;
+    color:  rgb(255, 34, 0);
+    background-color: transparent;
+}
+#one:hover,#two:hover{
+    background-color:  rgb(255, 34, 0);
+    color: rgb(37, 37, 143);
+}
+}
